@@ -1,22 +1,32 @@
-import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 
 class twitterReadertests {
 
-	@BeforeEach
-	void setUp() throws Exception {
+	public static void main(String [] args){
+		twitterReadertests test = new twitterReadertests();
+		System.out.println(test.testURL());
+		System.out.println(test.testTopic());
+		System.out.println(test.testMention());
 	}
 
-	@AfterEach
-	void tearDown() throws Exception {
+
+	private boolean testURL() {
+		String testmsg = "@franky goes to #hollywood. See http://cnn.com.";
+		twitterReader test = new twitterReader(testmsg);
+		return("http://cnn.com".equals(twitterReader.getMention(test.getmsg())));
 	}
 
-	@Test
-	void test() {
-		fail("Not yet implemented");
-	}
 
+	boolean testTopic() {
+		String testmsg = "@franky goes to #hollywood. See http://cnn.com.";
+		twitterReader test = new twitterReader(testmsg);
+		return("hollywood".equals(twitterReader.getMention(test.getmsg())));
+	}
+	
+
+	boolean testMention() {
+		String testmsg = "@franky goes to #hollywood. See http://cnn.com.";
+		twitterReader test = new twitterReader(testmsg);
+		return("franky".equals(twitterReader.getMention(test.getmsg())));
+	}
 }
