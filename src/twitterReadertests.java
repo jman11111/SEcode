@@ -13,20 +13,21 @@ class twitterReadertests {
 	private boolean testURL() {
 		String testmsg = "@franky goes to #hollywood. See http://cnn.com.";
 		twitterReader test = new twitterReader(testmsg);
-		return("http://cnn.com".equals(twitterReader.getMention(test.getmsg())));
+		System.out.println(twitterReader.getURL(testmsg));
+		return("http://cnn.com".equals(twitterReader.getURL(testmsg)));
 	}
 
 
 	boolean testTopic() {
 		String testmsg = "@franky goes to #hollywood. See http://cnn.com.";
 		twitterReader test = new twitterReader(testmsg);
-		return("hollywood".equals(twitterReader.getMention(test.getmsg())));
+		return("hollywood".equals(twitterReader.getTopic(testmsg)));
 	}
 	
 
 	boolean testMention() {
 		String testmsg = "@franky goes to #hollywood. See http://cnn.com.";
 		twitterReader test = new twitterReader(testmsg);
-		return("franky".equals(twitterReader.getMention(test.getmsg())));
+		return("franky".equals(twitterReader.getMention(testmsg)));
 	}
 }
