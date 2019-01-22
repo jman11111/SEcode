@@ -7,6 +7,7 @@ class twitterReadertests {
 		System.out.println(test.testURL());
 		System.out.println(test.testTopic());
 		System.out.println(test.testMention());
+		System.out.println(test.testRetweet());
 	}
 
 
@@ -28,5 +29,12 @@ class twitterReadertests {
 		String testmsg = "@franky goes to #hollywood. See http://cnn.com.";
 		twitterReader test = new twitterReader(testmsg);
 		return("@franky".equals(twitterReader.getMention(testmsg)));
+	}
+
+
+	boolean testRetweet() {
+		String testmsg = "RT @franky: cool story bro!";
+		twitterReader test = new twitterReader(testmsg);
+		return("RT @franky:".equals(twitterReader.getRetweet(testmsg)));
 	}
 }
