@@ -80,6 +80,7 @@ public class twitterReader {
 	public static String getRetweet(String testmsg) {
 		//regex expression for retweets found at https://www.regextester.com/93445
 		String regex = "^(RT|rt)( @\\w*)?[: ]";
+		//"retweeted_status"
 
 		//splits message at whitespaces (space character " "), turning it into an array
 		String[] message = testmsg.split("\\s");

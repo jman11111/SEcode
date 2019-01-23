@@ -35,6 +35,11 @@ class twitterReadertests {
 	boolean testRetweet() {
 		String testmsg = "RT @franky: cool story bro!";
 		twitterReader test = new twitterReader(testmsg);
+		System.out.println(twitterReader.getRetweet(testmsg));
 		return("RT @franky:".equals(twitterReader.getRetweet(testmsg)));
+		//retweeted_status
+		//String testmsg = "retweeted_status @franky: cool story bro!"'
+		//return("retweeted_status".equals(twitterReader.getRetweet(testmsg)));
+
 	}
 }
