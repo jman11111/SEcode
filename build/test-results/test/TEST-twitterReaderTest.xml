@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="twitterReaderTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-01-25T02:34:50" hostname="roflcopter" time="0.004">
+  <properties/>
+  <testcase name="getURL" classname="twitterReaderTest" time="0.002"/>
+  <testcase name="getTopic" classname="twitterReaderTest" time="0.0"/>
+  <testcase name="getMention" classname="twitterReaderTest" time="0.001"/>
+  <testcase name="getRetweet" classname="twitterReaderTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,3 +1,0 @@
-Files:
-twitterReader, reads a string formatted for twitter, parsing out significant parts
-twitterReadertests, tests for aforementioned file
