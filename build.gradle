@@ -14,6 +14,14 @@ tasks.withType(Test) {
   }
 }
 
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'SEcodeGradle.main'
+        )
+    }
+}
+
 repositories {
     mavenCentral()
 }
