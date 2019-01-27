@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="twitterReaderTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-01-27T03:50:18" hostname="roflcopter" time="0.011">
+<testsuite name="twitterReaderTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-01-27T18:34:05" hostname="Sophies-MacBook-Pro.local" time="0.007">
   <properties/>
-  <testcase name="getURLs" classname="twitterReaderTest" time="0.008"/>
+  <testcase name="getURLs" classname="twitterReaderTest" time="0.005"/>
   <testcase name="getTopics" classname="twitterReaderTest" time="0.001"/>
   <testcase name="getMentions" classname="twitterReaderTest" time="0.001"/>
   <testcase name="getRetweet" classname="twitterReaderTest" time="0.0"/>
