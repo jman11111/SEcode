@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SEcode.iml" filepath="$PROJECT_DIR$/SEcode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SEcode.iml" filepath="$PROJECT_DIR$/.idea/SEcode.iml" />
     </modules>
   </component>
 </project>
